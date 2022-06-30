@@ -23,12 +23,12 @@ module.exports.metametricsPageElements = {
   optOutAnalyticsButton,
 };
 
-const firstTimeFlowFormPage = '.first-time-flow__form';
+const firstTimeFlowFormPage = '.create-new-vault__form';
 const secretWordsInput = `${firstTimeFlowFormPage} .import-srp__srp input[type="password"]`;
 const passwordInput = `${firstTimeFlowFormPage} #password`;
 const confirmPasswordInput = `${firstTimeFlowFormPage} #confirm-password`;
 const termsCheckbox = `${firstTimeFlowFormPage} #create-new-vault__terms-checkbox`;
-const importButton = `.first-time-flow__button`;
+const importButton = `.create-new-vault__submit-button`;
 const newPasswordInput = `${firstTimeFlowFormPage} #create-password`;
 const newSignupCheckbox = `${firstTimeFlowFormPage}  .first-time-flow__checkbox`;
 
