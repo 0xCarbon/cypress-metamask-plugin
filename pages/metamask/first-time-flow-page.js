@@ -23,22 +23,28 @@ module.exports.metametricsPageElements = {
   optOutAnalyticsButton,
 };
 
-const firstTimeFlowFormPage = '.create-new-vault__form';
-const secretWordsInput = `${firstTimeFlowFormPage} .import-srp__srp input[type="password"]`;
-const passwordInput = `${firstTimeFlowFormPage} #password`;
-const confirmPasswordInput = `${firstTimeFlowFormPage} #confirm-password`;
-const termsCheckbox = `${firstTimeFlowFormPage} #create-new-vault__terms-checkbox`;
+const firstTimeFlowFormPageCreate = '.first-time-flow__form';
+const firstTimeFlowFormPageImport = '.create-new-vault__form';
+const secretWordsInput = `${firstTimeFlowFormPageImport} .import-srp__srp input[type="password"]`;
+const passwordInput = `${firstTimeFlowFormPageImport} #password`;
+const confirmPasswordInputImport = `${firstTimeFlowFormPageImport} #confirm-password`;
+const confirmPasswordInputCreate = `${firstTimeFlowFormPageCreate} #confirm-password`;
+const termsCheckbox = `${firstTimeFlowFormPageImport} #create-new-vault__terms-checkbox`;
 const importButton = `.create-new-vault__submit-button`;
-const newPasswordInput = `${firstTimeFlowFormPage} #create-password`;
-const newSignupCheckbox = `${firstTimeFlowFormPage}  .first-time-flow__checkbox`;
+const createButton = `.first-time-flow__button`;
+const newPasswordInput = `${firstTimeFlowFormPageCreate} #create-password`;
+const newSignupCheckbox = `${firstTimeFlowFormPageCreate}  .first-time-flow__checkbox`;
 
 module.exports.firstTimeFlowFormPageElements = {
-  firstTimeFlowFormPage,
+  firstTimeFlowFormPageImport,
+  firstTimeFlowFormPageCreate,
   secretWordsInput,
   passwordInput,
-  confirmPasswordInput,
+  confirmPasswordInputImport,
+  confirmPasswordInputCreate,
   termsCheckbox,
   importButton,
+  createButton,
   newPasswordInput,
   newSignupCheckbox,
 };

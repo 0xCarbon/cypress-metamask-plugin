@@ -128,7 +128,7 @@ module.exports = {
       password,
     );
     await puppeteer.waitAndType(
-      firstTimeFlowFormPageElements.confirmPasswordInput,
+      firstTimeFlowFormPageElements.confirmPasswordInputImport,
       password,
     );
     await puppeteer.waitAndClick(firstTimeFlowFormPageElements.termsCheckbox);
@@ -146,13 +146,13 @@ module.exports = {
       password,
     );
     await puppeteer.waitAndType(
-      firstTimeFlowFormPageElements.confirmPasswordInput,
+      firstTimeFlowFormPageElements.confirmPasswordInputCreate,
       password,
     );
     await puppeteer.waitAndClick(
       firstTimeFlowFormPageElements.newSignupCheckbox,
     );
-    await puppeteer.waitAndClick(firstTimeFlowFormPageElements.importButton);
+    await puppeteer.waitAndClick(firstTimeFlowFormPageElements.createButton);
     await puppeteer.waitAndClick(secureYourWalletPageElements.nextButton);
     await puppeteer.waitAndClick(revealSeedPageElements.remindLaterButton);
     await puppeteer.waitFor(mainPageElements.walletOverview);
