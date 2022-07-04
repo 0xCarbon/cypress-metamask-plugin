@@ -153,10 +153,12 @@ module.exports = {
   },
   waitAndGetValue: async (selector, page = metamaskWindow) => {
     await module.exports.waitFor(selector, page);
-    const element = await page.$(selector);
-    const property = await element.getProperty('value');
-    const value = await property.jsonValue();
-    return value;
+    const element = await page.evaluate(
+      selector => document.querySelector(selector).textContent,
+      selector,
+    );
+    
+    return element;
   },
   waitAndSetValue: async (text, selector, page = metamaskWindow) => {
     await module.exports.waitFor(selector, page);
