@@ -67,7 +67,7 @@ declare namespace Cypress {
      * cy.changeMetamaskNetwork('custom network')
      * cy.changeMetamaskNetwork({networkName: 'name'})
      */
-    changeMetamaskNetwork(network: string): Chainable<Subject>;
+    changeMetamaskNetwork(network: string | object): Chainable<Subject>;
     /**
      * Import new account in metamask using private key
      * @example
