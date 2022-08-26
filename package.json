@@ -43,7 +43,7 @@
     "@types/testing-library__cypress": "5.0.9",
     "axios": "0.27.2",
     "cross-zip": "4.0.0",
-    "cypress": "9.6.1",
+    "cypress": "10.6.0",
     "cypress-wait-until": "1.7.2",
     "etherscan-api": "10.0.9",
     "node-fetch": "2.6.7",
